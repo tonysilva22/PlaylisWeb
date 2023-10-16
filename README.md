@@ -1,4 +1,4 @@
-# [PlaylistWeb](https://tonysilva22.github.io/PlayListWeb/). 🎵
+# [PlaylisWeb](https://tonysilva22.github.io/PlayLisWeb/). 🎵
 ![PlayListWeb Logo](./image/PlayListWeb.jpeg)
 ## 📝 Descrição
 
