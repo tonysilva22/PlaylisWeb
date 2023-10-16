@@ -221,3 +221,22 @@ header h2 {
   color: #030303;
   font-size: 18px;
 }
+
+
+footer {
+  background: linear-gradient(80deg, #00378a, #4b93ff, #5295fa, #000a91);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 25px; 
+}
+
+.social-icons a i {
+  color: rgb(0, 0, 0); 
+}
