@@ -1,0 +1,222 @@
+/* Define variáveis de cores */
+:root {
+  --primary-color: #000000; /* Define a cor primária */
+  --text-color: #000000; /* Define a cor do texto */
+}
+
+/* Reseta margens, preenchimentos e box-model */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+/* Estiliza o corpo do documento */
+body {
+  background: linear-gradient(80deg, #002c6d, #398ee6, #488fe3, #001b6c);
+}
+
+
+/* Define o box-model e a fonte padrão para o HTML */
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estiliza o player de áudio */
+.player {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Esconde o ícone de pause por padrão */
+.player .icon-pause {
+  display: none;
+}
+
+/* Mostra o ícone de pause quando o player está tocando */
+.player.playing .icon-pause {
+  display: inline-block;
+}
+
+/* Esconde o ícone de play quando o player está tocando */
+.player.playing .icon-play {
+  display: none;
+}
+
+/* Estiliza o painel de controle */
+.dashboard {
+  padding: 16px 16px 14px; /* Define o preenchimento (topo, laterais, baixo) */
+  background: linear-gradient(45deg, #002c6d, #469bf7, #001b6c);
+  position: fixed; /* Define a posição como fixa (permanece no mesmo lugar mesmo ao rolar) */
+  top: 0; /* Define a distância do topo como 0 */
+  width: 100%; /* Define a largura como 100% da largura do contêiner pai */
+  max-width: 480px; /* Define a largura máxima como 480 pixels */
+  border-bottom: 2px solid #000000; /* Adiciona uma borda na parte inferior */
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(255, 255, 255, 0.993);
+}
+
+
+/* Estiliza o cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header h4 {
+  color: var(--primary-color); /* Usa a cor primária para o sub-título */
+  font-size: 12px;
+}
+
+header h2 {
+  color: var(--text-color); /* Usa a cor de texto para o título */
+  font-size: 20px;
+}
+
+/* Estiliza o CD (capa do álbum) */
+.cd {
+  display: flex;
+  margin: auto;
+  width: 200px;
+}
+
+.cd-thumb {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-color: #000000;
+  background-size: cover;
+  margin: auto;
+}
+
+/* Estiliza os controles de reprodução */
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 18px 0 8px 0;
+}
+
+.control .btn {
+  color: #ffffff;
+  padding: 18px;
+  font-size: 18px;
+}
+
+.control .btn.active {
+  color: var(--primary-color);
+}
+
+.control .btn-toggle-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+/* Estiliza a barra de progresso */
+.progress {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #ffffff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+/* Estiliza o botão de arrastar na barra de progresso */
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 6px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Estiliza a lista de reprodução */
+.playlist {
+  margin-top: 408px; /* Adiciona espaço acima da lista de reprodução */
+  padding: 12px;
+}
+
+/* Estiliza uma música na lista de reprodução */
+.song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background: linear-gradient(80deg, #00378a, #4b93ff, #5295fa, #000a91);
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.993);
+  border: 2px solid #ffffff;
+}
+
+
+
+
+/* Estiliza uma música ativa na lista de reprodução */
+.song.active {
+  background: linear-gradient(45deg, #000000, #3068bd,#000000);
+}
+
+
+/* Estiliza uma música quando clicada */
+.song:active {
+  opacity: 0.8;
+}
+
+/* Estiliza elementos dentro de uma música ativa */
+.song.active .option,
+.song.active .author,
+.song.active .title {
+  background: linear-gradient(90deg, #ffffff, #ffffff,#ffffff,#000000);
+-webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffffff; 
+}
+
+/* Estiliza a imagem da capa do álbum */
+.song .thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 8px;
+}
+
+/* Estiliza o corpo da música */
+.song .body {
+  flex: 1;
+  padding: 0 16px;
+}
+
+/* Estiliza o título da música */
+.song .title {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+/* Estiliza o autor da música */
+.song .author {
+  font-size: 12px;
+  color: #000000;
+}
+
+/* Estiliza a opção (ícone) da música */
+.song .option {
+  padding: 16px 8px;
+  color: #030303;
+  font-size: 18px;
+}

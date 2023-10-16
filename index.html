@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlaylisWeb</title>
+    <meta
+      name="description"
+      content="O PlaylisWeb é um reprodutor de músicas online que permite criar e organizar listas de reprodução personalizadas. Desfrute de uma experiência musical envolvente com uma ampla seleção de músicas de diversos gêneros."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./image/PlayListWeb.jpeg" />
+    <meta
+      name="keywords"
+      content="música, playlist, ouvir música, descobrir música, reproduzir música, plataforma musical, streaming de música, artistas, álbuns"
+    />
+
+    <meta name="author" content="Antonio Marcos" />
+  </head>
+
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configuração de viewport para responsividade -->
+    <title>Music player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inclui a fonte "Poppins" -->
+
+    <div class="player">
+      <!-- Dashboard -->
+      <div class="dashboard">
+        <!-- Header -->
+        <header>
+          <h2></h2>
+        </header>
+
+        <!-- CD -->
+        <div class="cd">
+          <div class="cd-thumb"></div>
+        </div>
+
+        <!-- Control (Botões de controle) -->
+        <div class="control">
+          <div class="btn btn-repeat">
+            <i class="fas fa-redo"></i>
+            <!-- Ícone de repetição -->
+          </div>
+          <div class="btn btn-prev">
+            <i class="fas fa-step-backward"></i>
+            <!-- Ícone de retroceder para a faixa anterior -->
+          </div>
+          <div class="btn btn-toggle-play">
+            <i class="fas fa-pause icon-pause"></i>
+            <!-- Ícone de pausa -->
+            <i class="fas fa-play icon-play"></i>
+            <!-- Ícone de reprodução -->
+          </div>
+          <div class="btn btn-next">
+            <i class="fas fa-step-forward"></i>
+            <!-- Ícone de avançar para a próxima faixa -->
+          </div>
+          <div class="btn btn-random">
+            <i class="fas fa-random"></i>
+            <!-- Ícone de reprodução aleatória -->
+          </div>
+        </div>
+
+        <input
+          id="progress"
+          class="progress"
+          type="range"
+          value="0"
+          step="1"
+          min="0"
+          max="100"
+        />
+        <!-- Barra de progresso -->
+
+        <audio id="audio" src=""></audio>
+        <!-- Elemento de áudio -->
+      </div>
+
+      <!-- Playlist -->
+      <div class="playlist"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <!-- Inclui o arquivo JavaScript -->
+  </body>
+</html>
