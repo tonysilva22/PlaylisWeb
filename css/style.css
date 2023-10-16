@@ -13,7 +13,7 @@
 
 /* Estiliza o corpo do documento */
 body {
-  background: linear-gradient(80deg, #002c6d, #398ee6, #488fe3, #001b6c);
+  background-color: #313131;
 }
 
 
@@ -43,6 +43,7 @@ html {
 /* Esconde o ícone de play quando o player está tocando */
 .player.playing .icon-play {
   display: none;
+  
 }
 
 /* Estiliza o painel de controle */
@@ -55,7 +56,7 @@ html {
   max-width: 480px; /* Define a largura máxima como 480 pixels */
   border-bottom: 2px solid #000000; /* Adiciona uma borda na parte inferior */
   border-radius: 5px;
-  box-shadow: 0 3px 5px rgba(255, 255, 255, 0.993);
+  box-shadow: 0 0px 5px 4px rgba(255, 255, 255, 0.993);
 }
 
 
